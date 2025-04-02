@@ -7,11 +7,11 @@ import DashboardPage from '../views/DashboardPage.vue';
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/login', component: Login },
-  { path: '/register', component: Register },
+  { path: '/login', component: LoginPage },
+  { path: '/register', component: RegisterPage },
   {
     path: '/dashboard',
-    component: Dashboard,
+    component: DashboardPage,
     meta: { requiresAuth: true }
   }
 ];
